@@ -393,12 +393,12 @@ footer {
 .membership-page .glass-container {
   position: relative;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(10, 10, 10, 0.6);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
   padding: 40px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -409,6 +409,6 @@ footer {
 }
 
 .membership-page .plan-box {
-  background: rgba(255, 255, 255, 0.9);
-  border: none;
+  background: rgba(30, 30, 30, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
