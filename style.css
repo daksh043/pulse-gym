@@ -211,27 +211,53 @@ h1, h2, h3 {
   padding-bottom: 5px;
 }
 
-/* Schedule Table */
+/* Schedule Table Premium */
 .schedule-table {
   width: 100%;
   border-collapse: collapse;
   background-color: var(--white);
-  margin-top: 20px;
+  margin-top: 30px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-style: hidden; /* hides default outer border to let radius show */
 }
 
 .schedule-table th, .schedule-table td {
-  border: 1px solid var(--border-color);
-  padding: 15px;
+  padding: 20px;
   text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.schedule-table tr:last-child td {
+  border-bottom: none;
 }
 
 .schedule-table th {
   background-color: var(--primary-color);
   color: var(--white);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  border-bottom: 3px solid var(--secondary-color);
 }
 
-.schedule-table tr:nth-child(even) {
-  background-color: var(--bg-light);
+.schedule-table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.schedule-table tbody tr:hover {
+  background-color: #fafafa;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 10;
+}
+
+.schedule-table td {
+  color: #555;
+  font-size: 0.95rem;
 }
 
 /* FAQ Accordion (CSS Only) */
