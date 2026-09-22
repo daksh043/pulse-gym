@@ -63,7 +63,8 @@ header {
 }
 
 .logo img {
-  height: 45px;
+  height: 90px;
+  mix-blend-mode: screen; /* Removes the dark background to blend with the header */
   border-radius: 4px;
 }
 
