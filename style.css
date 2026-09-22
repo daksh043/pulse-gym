@@ -1,12 +1,13 @@
 /* Global Styles */
 :root {
-  --primary-color: #2b2b2b;
-  --secondary-color: #e50914; /* Standard gym red */
-  --text-color: #333333;
-  --bg-color: #ffffff;
-  --bg-light: #f4f4f4;
-  --white: #ffffff;
-  --border-color: #dddddd;
+  --primary-color: #0f0f0f;      /* Near Black for headers/footers */
+  --secondary-color: #d4af37;    /* Premium Gold */
+  --text-color: #e0e0e0;         /* Off-white text */
+  --text-dark: #121212;          /* Dark text for specific areas */
+  --bg-color: #121212;           /* Deep Charcoal Body Background */
+  --bg-light: #1e1e1e;           /* Lighter Charcoal for cards/surfaces */
+  --white: #ffffff;              /* Pure white for high contrast */
+  --border-color: #333333;       /* Subtle dark borders */
   --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -20,7 +21,7 @@ body {
   font-family: var(--font-main);
   line-height: 1.6;
   color: var(--text-color);
-  background-color: var(--bg-light);
+  background-color: var(--bg-color);
 }
 
 a {
@@ -107,7 +108,7 @@ main {
 /* Typography */
 h1, h2, h3 {
   margin-bottom: 15px;
-  color: var(--primary-color);
+  color: var(--white);
 }
 
 .section-title {
@@ -121,7 +122,7 @@ h1, h2, h3 {
 .btn-primary {
   display: inline-block;
   background-color: var(--secondary-color);
-  color: var(--white);
+  color: var(--primary-color);
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: bold;
@@ -132,7 +133,7 @@ h1, h2, h3 {
 }
 
 .btn-primary:hover {
-  background-color: #cc0000;
+  background-color: #b5952f;
 }
 
 /* Hero Section */
@@ -169,11 +170,12 @@ h1, h2, h3 {
 
 /* Cards */
 .card {
-  background-color: var(--white);
+  background-color: var(--bg-light);
   border: 1px solid var(--border-color);
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .card h3 {
@@ -183,19 +185,20 @@ h1, h2, h3 {
 
 /* Pricing / Plan Box */
 .plan-box {
-  background-color: var(--white);
+  background-color: var(--bg-light);
   border: 1px solid var(--border-color);
   padding: 30px 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   text-align: center;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .plan-price {
   font-size: 2rem;
   font-weight: bold;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   margin: 20px 0;
 }
 
@@ -215,7 +218,7 @@ h1, h2, h3 {
 .schedule-table {
   width: 100%;
   border-collapse: collapse;
-  background-color: var(--white);
+  background-color: var(--bg-light);
   margin-top: 30px;
   border-radius: 12px;
   overflow: hidden;
@@ -248,21 +251,21 @@ h1, h2, h3 {
 }
 
 .schedule-table tbody tr:hover {
-  background-color: #fafafa;
+  background-color: #2a2a2a;
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 10;
 }
 
 .schedule-table td {
-  color: #555;
+  color: var(--text-color);
   font-size: 0.95rem;
 }
 
 /* FAQ Accordion (CSS Only) */
 .faq-item {
-  background-color: var(--white);
+  background-color: var(--bg-light);
   margin-bottom: 10px;
   border: 1px solid var(--border-color);
   border-radius: 5px;
@@ -282,7 +285,7 @@ h1, h2, h3 {
 .faq-answer {
   max-height: 0;
   padding: 0 20px;
-  background-color: var(--white);
+  background-color: var(--bg-light);
   transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
@@ -299,10 +302,11 @@ h1, h2, h3 {
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
-  background: var(--white);
+  background: var(--bg-light);
   padding: 30px;
   border: 1px solid var(--border-color);
-  border-radius: 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .form-group {
@@ -323,6 +327,8 @@ h1, h2, h3 {
   border: 1px solid var(--border-color);
   border-radius: 4px;
   font-family: inherit;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 /* Footer */
