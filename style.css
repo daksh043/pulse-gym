@@ -338,3 +338,45 @@ footer {
     overflow-x: auto;
   }
 }
+
+/* Membership Page Background Blur & Glassmorphism */
+.membership-page {
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1470&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.membership-page::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+  z-index: 0;
+}
+
+.membership-page .glass-container {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  padding: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.membership-page .section-title {
+  color: var(--white);
+}
+
+.membership-page .plan-box {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+}
